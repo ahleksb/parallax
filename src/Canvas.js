@@ -89,7 +89,7 @@ export default class Canvas {
 
     // calculate the offset top/left rounding it
     offsetTop = -~~((nh - size.height) / 2)
-    offsetLeft = -~~((nw - size.width) / 2)
+    offsetLeft = -~~((nw - size.width) * this.opts.centerX);
 
     this.img.width = nw
     this.img.height = nh
